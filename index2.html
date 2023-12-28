@@ -1,0 +1,117 @@
+<!--
+  Hecho en Cartagena Colombia por
+  Javier Antonio Llanos Marriaga
+  en el marco de la realizacion del
+  Homework del modulo M03 del PrepCouarse
+  de HENRY!
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experimental html-only layout ~ Javier's DEV Blog 🚀</title>
+  <link rel="icon" type="image/x-icon" href="favicon-16x16.png" />
+</head>
+
+<body>
+  <!--
+      Nota: "Antes de la creación de CSS, los elementos HTML <table>
+      eran frecuentemente utilizados para la disposición (posicionamiento)
+      de una página. Este uso ha sido desalentado desde HTML 4, y el elemento
+      no debe ser usado para dichos fines."
+
+      Fuente: https://developer.mozilla.org/es/docs/Web/HTML/Element/table
+
+      El uso de las tablas de esta manera y ciertos atributos deprecados es solo
+      por el reto auto-impuesto de hacer un nav-sidebar jugando con los limites de html!
+    -->
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">
+          <header>
+            <h1>My DEV blog 👨🏻‍💻</h1>
+            <p>The purpose of this blog is to share my experience as a developer and some tips!</p>
+            <hr>
+          </header>
+        </th>
+      </tr>
+      <tr>
+        <th colspan="1">
+          MAP↴
+        </th>
+        <th colspan="1">HOME</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td valign="top">
+          <aside>
+            <br>
+            <nav>
+              <div>
+                <a href="./index.html">Home</a>
+              </div>
+              <div>
+                <a href="./blog.html">Blog</a>
+              </div>
+              <div>
+                <a href="./projects.html">Projects</a>
+              </div>
+              <div>
+                <a href="./aboutme.html">About</a>
+              </div>
+              <div>
+                ▶Home_Ex◀
+              </div>
+            </nav>
+          </aside>
+        </td>
+        <td>
+          <main>
+            <h4>
+              This is an experimental layout with an Sidebar nav using only HTML!
+            </h4>
+
+            <blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Element/table">
+              <p>
+                Según <b><abbr title="Mozilla Developer Network">MDN</abbr></b> en su versión en español:
+              </p>
+              <q>
+                <cite>
+                  Antes de la creación de CSS, los elementos HTML <b>&lttable&gt</b>
+                  eran frecuentemente utilizados para la disposición (posicionamiento)
+                  de una página. Este uso ha sido desalentado desde HTML 4, y el elemento
+                  no debe ser usado para dichos fines.
+                </cite>
+              </q>
+              <p>
+                Fuente:
+                <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/table">
+                  https://developer.mozilla.org/es/docs/Web/HTML/Element/table
+                </a>
+              </p>
+            </blockquote>
+
+            <P>
+              El uso de las tablas de esta manera y ciertos atributos deprecados es solo
+              por el reto auto-impuesto de hacer un nav-sidebar jugando con los límites de html.
+            </p>
+          </main>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2" align="center">
+          <hr>
+          <footer>Javier Llanos ~ 2023 ~ All rights reserved.</footer>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>
