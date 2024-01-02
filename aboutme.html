@@ -13,85 +13,94 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>About me ~ Javier's DEV Blog 🚀</title>
 	<link rel="icon" type="image/x-icon" href="favicon-16x16.png" />
+	<link rel="stylesheet" href="./styles.css">
 </head>
 
-<body>
-	<header>
-		<h1>My DEV blog 👨🏻‍💻</h1>
-		<p>
-			<b>The purpose of this blog is to share my experience as a developer and some tips!</b>
-		</p>
-	</header>
-
-	<hr>
-	<hr>
-	<aside>
-		<nav>
-			<span>
-				<a href="./index.html">Home</a>
-			</span>
-			<span>
-				<a href="./blog.html">Blog</a>
-			</span>
-			<span>
-				<a href="./projects.html">Projects</a>
-			</span>
-			<span>
-				▶About◀
-			</span>
-			<span>
-				<a href="./index2.html">Home_Ex</a></span>
-		</nav>
-	</aside>
-	<hr>
-	<hr>
-
-	<main>
-		<section>
-			<article>
-				<h2>About me</h2>
-				<figure>
-					<img title="Profile photo" src="./assets/profilePhoto.png" alt="My profile photo" height=100>
-					<figcaption>
-						<i>This is me!</i>
-					</figcaption>
-				</figure>
+<body class="stack">
+	<div class="page-container">
+		<header id="header">
+			<div class="stack page-title text-center">
+				<h1>MY DEV <span>BLOG</span></h1>
 				<p>
-					Hi,
-					<br>
-					My name is Javier Llanos.
+					<b>The purpose of this blog is to share my experience as a developer and some tips!</b>
 				</p>
-				<p>
-					Full Stack developer, systems engineering student and with experience in web development and great
-					General interest in software development accompanied by best practices, in constant
-					update, with great ability to adapt and care for detail, tested in environments of
-					dynamic and high demands.
-				</p>
-				<i><small>Taken from my CV</small></i>
-			</article>
-		</section>
-	</main>
+			</div>
+		</header>
 
-	<footer>
 		<hr>
 		<hr>
-		<div id="social_links">
-			<span>
-				<a href="https://www.linkedin.com/in/javierllns/" title="LinkedIn">
-					<img src="./assets/devicon-linkedin.svg" alt="linkedin-icon" height=20>
-				</a>
-			</span>
-			<span>
-				<a href="https://github.com/javierllns" title="GitHub">
-					<img src="./assets/skill-icons-github-dark.svg" alt="github-icon" height=20>
-				</a>
-			</span>
-		</div>
+		<aside class="stack">
+			<nav class="navigation">
+				<span>
+					<a href="./index.html">Home</a>
+				</span>
+				<span>
+					<a href="./blog.html">Blog</a>
+				</span>
+				<span>
+					<a href="./projects.html">Projects</a>
+				</span>
+				<span>
+					▶ About ◀
+				</span>
+				<span>
+					<a href="./index2.html">Home_Ex</a>
+				</span>
+			</nav>
+		</aside>
 		<hr>
 		<hr>
 
-		<span>Javier Llanos ~ 2023 ~ All rights reserved.</span>
-	</footer>
+		<main class="main-content">
+			<section class="stack">
+				<article data-small-card>
+					<h1 class="text-center">About me</h1>
+					<figure id="profile-picture">
+						<img title="Profile photo" src="./assets/profilePhoto.png" alt="My profile photo" height=100>
+						<figcaption class="text-center">
+							<i>This is me!</i>
+						</figcaption>
+					</figure>
+					<p>
+						<b>Hi,</b>
+						<br>
+						My name is Javier Llanos.
+					</p>
+					<p>
+						Full Stack developer, systems engineering student and with experience in web development and great
+						General interest in software development accompanied by best practices, in constant
+						update, with great ability to adapt and care for detail, tested in environments of
+						dynamic and high demands.
+					</p>
+					<i><small>Taken from my CV</small></i>
+				</article>
+			</section>
+			<p class="stack">
+				<a id="up-button" class="text-center" href="#header">UP!▲</a>
+			</p>
+		</main>
+
+		<footer class="page-footer text-center">
+			<hr>
+			<hr>
+			<div id="social-links">
+				<span>
+					<a href="https://www.linkedin.com/in/javierllns/" title="LinkedIn">
+						<img src="./assets/devicon-linkedin.svg" alt="linkedin-icon" height=20>
+					</a>
+				</span>
+				<span>
+					<a href="https://github.com/javierllns" title="GitHub">
+						<img src="./assets/skill-icons-github-dark.svg" alt="github-icon" height=20>
+					</a>
+				</span>
+			</div>
+			<hr>
+			<hr>
+
+			<span>Javier Llanos ~ 2023 ~ All rights reserved.</span>
+		</footer>
+	</div>
 </body>
 
 </html>
