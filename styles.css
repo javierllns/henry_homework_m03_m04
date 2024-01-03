@@ -1,5 +1,6 @@
 @import './normalize.css'; /*! alternativa a los tradicionales CSS Resets*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -42,7 +43,8 @@ body {
 }
 .page-title {
   h1 {
-    font-weight: 600;
+    font-family: 'Audiowide', sans-serif;
+    font-weight: 500;
     font-size: 4em;
     margin-bottom: 0.3em;
 
