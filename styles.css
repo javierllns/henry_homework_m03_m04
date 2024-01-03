@@ -40,6 +40,10 @@ body {
   max-width: 1024px;
   padding-inline: 1em;
   padding-bottom: 4em;
+
+  /*? Experimental */
+  box-sizing: border-box;
+  width: 100%;
 }
 .page-title {
   h1 {
@@ -92,9 +96,6 @@ body {
     padding: 2em;
     margin-bottom: 1.7em;
 
-    &[data-small-card] {
-      max-width: 27em;
-    }
     h1,
     h2,
     h3 {
@@ -112,6 +113,34 @@ body {
     img[data-responsive] {
       width: 100% !important;
       height: auto !important;
+    }
+
+    &[data-small-card] {
+      max-width: 27em;
+    }
+    /*? Experimental */
+    &[data-contains-iframe] {
+      --scale: 1; /*! Not to lose the aspect relation on small screens */
+      transform: scale(var(--scale)); /*! Not to lose the aspect relation on small screens */
+      box-sizing: border-box; /*! because class 'stack' in parent 'section' makes the iframe disappear */
+      width: 100%; /*! because class 'stack' in parent 'section' makes the iframe disappear */
+
+      .iframe-container {
+        width: 100%; /*! because class 'stack' in parent 'section' makes the iframe disappear */
+
+        position: relative;
+        padding-bottom: 52%;
+        height: 0;
+        overflow: hidden;
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
   }
 }

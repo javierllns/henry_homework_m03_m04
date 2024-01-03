@@ -74,6 +74,23 @@
 					</p>
 					<i><small>Taken from my CV</small></i>
 				</article>
+				<article data-contains-iframe>
+					<div class="iframe-container">
+						<iframe title="home-ex-iframe" src="./index2.html" frameborder="0" height="520" width="650"
+							style="border-radius: 12px; background-color: white;"></iframe>
+					</div>
+					<script>
+						const iframe_container = document.getElementsByClassName("iframe-container")
+						iframe_container &&
+							(function () {
+								window.addEventListener("resize", () => {
+									if (window.innerWidth < 1030) {
+										console.log("hola")
+									}
+								})
+							})()
+					</script>
+				</article>
 			</section>
 			<p class="stack">
 				<a id="up-button" class="text-center" href="#header">UP!▲</a>
